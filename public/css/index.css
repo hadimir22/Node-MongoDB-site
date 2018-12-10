@@ -40,8 +40,7 @@ a:hover {
 .txt {
     text-align: center;
     padding-top: 300px;
-    color: #d2dae2;
-    display: none;
+    color: white; 
 }
  
 .opt {
