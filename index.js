@@ -23,6 +23,6 @@ app.get('/join',function(req,res)
 {
     res.sendFile(__dirname + '/join.html');
 });
-var server=app.listen(3000,function() {
+var server=app.listen(2000,function() {
     console.log("running");
 });
