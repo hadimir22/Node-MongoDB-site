@@ -3,9 +3,18 @@ const Schema = mongoose.Schema;
 
 ////////////////////////schema/////////////////////////
 const infoSchema = new Schema( {
-    name : String,
-    projectName : String,
-    url : Number,
+    name : {
+          type: String,
+          required: true
+        },
+    projectName : {
+        type: String,
+        required: true
+      },
+    url :{
+        type: Number,
+        required: true
+      },
 });
 
 ///////////////////////model///////////////////////////////

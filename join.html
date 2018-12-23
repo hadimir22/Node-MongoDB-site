@@ -33,22 +33,22 @@
         <div class="row form"> 
             <div class="col-lg-12 col-sm-12">
 
-                    <form>
+                    <form method="POST" action="/join">
                             <div class="form-group">
                               <label for="text1">Your name</label>
-                              <input type="text" class="form-control" id="text1" aria-describedby="text1Help" placeholder="eg jhon snow">
+                              <input type="text" name="name" class="form-control" id="text1" aria-describedby="text1Help" placeholder="eg jhon snow">
                              </div>
                             <div class="form-group">
                                     <label for="text2">Project name</label>
-                                    <input type="text" class="form-control" id="text2" aria-describedby="text2Help" placeholder="eg the wall">
+                                    <input type="text" name="proName" class="form-control" id="text2" aria-describedby="text2Help" placeholder="eg the wall">
                               </div>
                             <div class="form-group">
                                         <label for="text3">Project link</label>
-                                        <input type="text" class="form-control" id="text3" aria-describedby="text3Help" placeholder="eg https://github.com/hadimir22">
+                                        <input type="text" name="link" class="form-control" id="text3" aria-describedby="text3Help" placeholder="eg https://github.com/hadimir22">
                             </div>
                        
                            
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" id ="submit" class="btn btn-primary">Submit</button>
                    </form>
  
            </div>             
@@ -81,6 +81,6 @@
          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="./js/in.js"></script>
+        <script src="./js/join.js"></script>
 </body>
 </html>
