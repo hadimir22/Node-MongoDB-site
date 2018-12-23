@@ -28,14 +28,31 @@
 
 
           
+      
+                        
+                        <% for(var i=0; i < data.length; i++) { %>
+                                <div class="container-fluid ">
+                                                <div class="row"> 
+                                                    <div class="col-lg-6 col-sm-12">
+                                
+                         
+                                 
+                                  <div class="card" style="width: 18rem;">
+                                         <div class="card-body">
+                                                  <h5 class="card-title"><%= data[i].projectName %></h5>
+                                                  <h6 class="card-subtitle mb-2 text-muted">Developer: <%= data[i].name %> </h6> 
+                                                  <a href="<%= data[i].url%> " class="card-link">Project link</a> 
+                                         </div>
+                                   </div>
 
-        <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Project name</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Developer: </h6> 
-                  <a href="#" class="card-link">Project link</a> 
-                </div>
-        </div>
+                                </div>
+                        </div>            
+               </div> 
+        
+                             <% } %>
+                         
+           
+         
 
    
 

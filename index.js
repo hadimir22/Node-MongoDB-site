@@ -12,10 +12,9 @@ mongoose.connection.once('open', function(){
 });
 
 const app=express(); 
-
 app.use(express.static(__dirname + '/public/'));
-
- app.use(bodyParser.urlencoded({ extended: false }));
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
   
  
@@ -52,7 +51,12 @@ app.post('/join',function(req,res){
 });
 
 app.get('/display',function(req,res){
-    res.sendFile(__dirname + '/display.html');
+
+    userData.find({} , function(err, data){
+        
+   res.render('display', {data : data});
+        });
+  
 });
 
 
@@ -61,3 +65,4 @@ app.get('/display',function(req,res){
 var server=app.listen(2000,function() {
     console.log("app running on port 2000");
 });
+
