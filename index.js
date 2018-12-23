@@ -45,13 +45,16 @@ app.post('/join',function(req,res){
             }
             else{
             console.log('data saved');
-            res.sendFile(__dirname + '/display.html');
+            res.redirect('/display');
             }
        });
- 
-  
    
 });
+
+app.get('/display',function(req,res){
+    res.sendFile(__dirname + '/display.html');
+});
+
 
 
 
