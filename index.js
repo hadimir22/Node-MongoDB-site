@@ -23,12 +23,15 @@ app.use(bodyParser.json());
 
 app.get('/',function(req,res)
 {
-    res.sendFile(__dirname + '/index.html');
+    //res.sendFile(__dirname + '/index.html');
+    res.render('index');
+
    
 });
 
 app.get('/join',function(req,res){
-    res.sendFile(__dirname + '/join.html');
+    //res.sendFile(__dirname + '/join.html');
+    res.render('join');
 });
 
 app.post('/join',function(req,res){

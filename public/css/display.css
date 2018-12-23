@@ -65,11 +65,16 @@ a:hover {
      background: brown;
  }
 
-
+ .up {
+    z-index: 1;
+    background-color: #6D214F;
+    min-height: 100px;  
+    transform: skewY(-10deg);
+}
 
  .card {
      margin-top: 150px;
-     margin-left: 100px;
+     margin-left: 150px;
  }
 
  .card-link {
