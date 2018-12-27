@@ -4,7 +4,7 @@ const userData = require('./model/model');
 const bodyParser = require('body-parser')
  
 
-mongoose.connect('mongodb://localhost/Node&me' , { useNewUrlParser: true } );
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds241570.mlab.com:41570/nodeandme' , { useNewUrlParser: true } );
 mongoose.connection.once('open', function(){
         console.log('connected using mongoose');
 }).on('error', function(error){
