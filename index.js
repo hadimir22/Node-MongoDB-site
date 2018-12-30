@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const userData = require('./model/model');
 const bodyParser = require('body-parser')
  
-
+var port = process.env.PORT || 8080;
 mongoose.connect('mongodb://localhost/Node&me' , { useNewUrlParser: true } );
 mongoose.connection.once('open', function(){
         console.log('connected using mongoose');
@@ -22,15 +22,13 @@ app.use(bodyParser.json());
 
 
 app.get('/',function(req,res)
-{
-    //res.sendFile(__dirname + '/index.html');
+{ 
     res.render('index');
 
    
 });
 
-app.get('/join',function(req,res){
-    //res.sendFile(__dirname + '/join.html');
+app.get('/join',function(req,res){ 
     res.render('join');
 });
 
@@ -65,7 +63,7 @@ app.get('/display',function(req,res){
 
 
 
-var server=app.listen(2000,function() {
-    console.log("app running on port 2000");
+var server=app.listen(port,function() {
+    console.log("app running on port 8080");
 });
 
